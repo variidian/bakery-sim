@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://yoylog7iult8"]
+
+[node name="get_order" type="Node2D"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://dfelorn6e1ukc"
+path="res://.godot/imported/purchase_croissant.dialogue-c2f878da0e0a95782ef139b344d4b53f.tres"
+
+[deps]
+
+source_file="res://purchase_croissant.dialogue"
+dest_files=["res://.godot/imported/purchase_croissant.dialogue-c2f878da0e0a95782ef139b344d4b53f.tres"]
+
+[params]
+
+defaults=true
