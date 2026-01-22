@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+transition="*res://transitioner.gd"
+c="*res://color_rect.tscn"
 
 [dialogue_manager]
 
