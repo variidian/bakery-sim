@@ -1,10 +1,4 @@
 ~ start
-Customer: [[Hey!|Hello|Hi|Howdy]], [[ could you get me|may i get|shall you get me]] a strawberry cream croissant [[ please?|dear?|darl|darling?]]
+Customer: [[Hey!|Hello,|Hi,|Howdy,]] [[ could you get me|may i get|can you get me]] a strawberry cream croissant, [[ please?|dear?|darl.|darling?]]
 - Yeah!
-	Customer: [[Great!|Nice,nice,|Oh darling|Thanks!]] [[ i'll just wait here, mhm?|Be quick, kay?|Rush it, would you?|I love you!]]
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
-=> END
+	Customer: [[Great!|Nice,nice,|Oh darling,|Thanks!]] [[ i'll just wait here, mhm?|Be quick, kay?|Rush it, would you?|I love you!]] 
