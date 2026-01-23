@@ -2,33 +2,6 @@
 
 [ext_resource type="Script" uid="uid://d8ypghg5e55g" path="res://color_rect.gd" id="1_h40d6"]
 
-[sub_resource type="Animation" id="Animation_3llwt"]
-resource_name = "new_animation"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:size")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.43333334),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(443.72256, 2833.581), Vector2(4045.1123, 2833.581)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.9333334),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(378.99997, -1391), Vector2(378.99997, -1391), Vector2(2735.0002, 49.000244)]
-}
-
 [sub_resource type="Animation" id="Animation_h40d6"]
 length = 0.001
 tracks/0/type = "value"
@@ -56,6 +29,33 @@ tracks/1/keys = {
 "values": [Vector2(378.99997, -1391)]
 }
 
+[sub_resource type="Animation" id="Animation_3llwt"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.43333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(443.72256, 2833.581), Vector2(4045.1123, 2833.581)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.9333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(378.99997, -1391), Vector2(378.99997, -1391), Vector2(2735.0002, 49.000244)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_var0u"]
 _data = {
 &"RESET": SubResource("Animation_h40d6"),
@@ -69,7 +69,7 @@ script = ExtResource("1_h40d6")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_left = 378.99997
 offset_top = -1391.0
-offset_right = 822.72253
+offset_right = 822.72266
 offset_bottom = 1442.581
 rotation = 0.59580207
 color = Color(0.9424336, 0.6738157, 0.6637372, 1)
@@ -78,3 +78,13 @@ color = Color(0.9424336, 0.6738157, 0.6637372, 1)
 libraries = {
 &"": SubResource("AnimationLibrary_var0u")
 }
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.028
+anchor_bottom = 1.0
+offset_left = 113.26314
+offset_right = 174.44604
+offset_bottom = 0.9321289
+color = Color(0.54901963, 0.21568628, 0.21960784, 1)

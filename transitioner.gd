@@ -1,4 +1,4 @@
-extends Node
+extends Node 
 func change_scene(target: String, from: String) -> void:
 	ResourceLoader.load_threaded_request(target)
 	while ResourceLoader.load_threaded_get_status(target) != ResourceLoader.THREAD_LOAD_LOADED:
