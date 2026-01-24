@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://dlgax08f5ipno"]
+[gd_scene load_steps=21 format=3 uid="uid://dlgax08f5ipno"]
 
 [ext_resource type="Script" uid="uid://4c8o85m5o46a" path="res://e/kitchen.gd" id="1_cw8m5"]
 [ext_resource type="Texture2D" uid="uid://ccmjptodv6l3d" path="res://images/sugar.png" id="2_sa2ce"]
+[ext_resource type="Texture2D" uid="uid://di0ongpvptsvd" path="res://images/eeeee.png" id="3_k0orp"]
 [ext_resource type="Script" uid="uid://cynpdpekymxlb" path="res://e/object.gd" id="3_sa2ce"]
 [ext_resource type="Texture2D" uid="uid://dg81q8rrkd4j0" path="res://images/flour.png" id="4_0lygj"]
 [ext_resource type="Texture2D" uid="uid://c7tsrlua84nab" path="res://images/salt.png" id="5_go31l"]
@@ -9,8 +10,77 @@
 [ext_resource type="Texture2D" uid="uid://dk0hvt5yxeqee" path="res://images/bowl.png" id="7_aygwg"]
 [ext_resource type="Theme" uid="uid://b4naw2i47mcoi" path="res://e/theme.tres" id="8_go31l"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_aygwg"]
+atlas = ExtResource("7_aygwg")
+region = Rect2(0, 0, 378, 339)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kkbhl"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(0, 0, 414, 308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5slg"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(414, 0, 414, 308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ue45"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(828, 0, 414, 308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rutp"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(0, 308, 414, 308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3voc5"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(414, 308, 414, 308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_84lbm"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(828, 308, 414, 308)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0158g"]
+atlas = ExtResource("3_k0orp")
+region = Rect2(0, 616, 414, 308)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_s4hgr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aygwg")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kkbhl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5slg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ue45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rutp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3voc5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_84lbm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0158g")
+}],
+"loop": false,
+"name": &"new_animation",
+"speed": 3.0
+}]
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g5slg"]
-radius = 136.09106
+radius = 173.25671
 height = 419.6515
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kkbhl"]
@@ -24,15 +94,15 @@ offset_right = 1928.0
 offset_bottom = 1101.0
 color = Color(0.54901963, 0.34117648, 0.27058825, 1)
 
-[node name="bowl" type="Sprite2D" parent="."]
+[node name="bowl" type="AnimatedSprite2D" parent="."]
 position = Vector2(938, 550)
 scale = Vector2(1.0820106, 1.2640117)
-texture = ExtResource("7_aygwg")
+sprite_frames = SubResource("SpriteFrames_s4hgr")
 
 [node name="bowl" type="Area2D" parent="bowl"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bowl/bowl"]
-position = Vector2(4.621025, 26.107353)
+position = Vector2(-0.9242072, -1.5822659)
 rotation = 1.5745461
 shape = SubResource("CapsuleShape2D_g5slg")
 
@@ -166,6 +236,7 @@ offset_right = 40.0
 offset_bottom = 1172.0
 color = Color(0.54901963, 0.21568628, 0.21960784, 1)
 
+[connection signal="animation_finished" from="bowl" to="." method="_on_bowl_animation_finished"]
 [connection signal="area_entered" from="bowl/bowl" to="." method="_on_area_2d_area_entered"]
 [connection signal="button_down" from="sugar/Button" to="sugar" method="_on_button_button_down"]
 [connection signal="button_up" from="sugar/Button" to="sugar" method="_on_button_button_up"]

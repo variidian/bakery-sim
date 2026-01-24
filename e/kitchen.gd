@@ -17,10 +17,13 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	object.hide() #hides objects to not be draggable + visible once in bowl
 	objects_removed += 1
 	if objects_removed == 4: #when all objects have been placed into bowl
-		c.anim()
-		transition.change_scene("res://e/get_order.tscn", "kitchen")
-
+		bowl.play("new_animation")
 
 func _on_button_pressed() -> void:
 	c.anim()
+	a.from_kitchen = true
 	transition.change_scene("res://e/draggables_guide.tscn", "kitchen")
+
+func _on_bowl_animation_finished() -> void:
+	c.anim()
+	transition.change_scene("res://e/kitchen_1.tscn", "kitchen")

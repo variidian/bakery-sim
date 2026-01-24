@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://8o6ixh71ex6e"]
+
+[ext_resource type="Script" uid="uid://cs65spatsmsp2" path="res://e/kitchen_2.gd" id="1_a1ff5"]
+[ext_resource type="Theme" uid="uid://b4naw2i47mcoi" path="res://e/theme.tres" id="2_laly8"]
+
+[node name="kitchen2" type="Node2D"]
+script = ExtResource("1_a1ff5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1928.0
+offset_bottom = 1101.0
+color = Color(0.54901963, 0.34117648, 0.27058825, 1)
+
+[node name="border" type="Node2D" parent="."]
+
+[node name="ColorRect12" type="ColorRect" parent="border"]
+offset_left = 1934.0
+offset_top = 1037.0
+offset_right = 1977.7975
+offset_bottom = 2959.0059
+rotation = 1.5707964
+color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+
+[node name="ColorRect11" type="ColorRect" parent="border"]
+offset_left = 1921.0
+offset_top = 1.0
+offset_right = 1964.7975
+offset_bottom = 1923.006
+rotation = 1.5707964
+color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+
+[node name="ColorRect10" type="ColorRect" parent="border"]
+offset_left = 1881.0
+offset_top = 1.0
+offset_right = 1921.0
+offset_bottom = 1173.0
+color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+
+[node name="ColorRect9" type="ColorRect" parent="border"]
+offset_right = 40.0
+offset_bottom = 1172.0
+color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 75.0
+offset_top = 81.0
+offset_right = 152.0
+offset_bottom = 142.0
+theme = ExtResource("2_laly8")
+text = "?"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

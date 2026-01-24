@@ -491,4 +491,37 @@ offset_right = 40.0
 offset_bottom = 1172.0
 color = Color(0.54901963, 0.21568628, 0.21960784, 1)
 
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+offset_left = 1026.0
+offset_top = 435.0
+offset_right = 1817.0
+offset_bottom = 656.0
+theme = ExtResource("1_4yyv2")
+theme_override_font_sizes/normal_font_size = 35
+text = "
+STEP TWO
+click on the dough to fill up the progress bar, which will roll the dough."
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+offset_left = 116.0
+offset_top = 750.0
+offset_right = 907.0
+offset_bottom = 971.0
+theme = ExtResource("1_4yyv2")
+theme_override_font_sizes/normal_font_size = 35
+text = "
+STEP THREE
+do something"
+
+[node name="RichTextLabel5" type="RichTextLabel" parent="."]
+offset_left = 1030.0
+offset_top = 749.0
+offset_right = 1821.0
+offset_bottom = 970.0
+theme = ExtResource("1_4yyv2")
+theme_override_font_sizes/normal_font_size = 35
+text = "
+STEP FOUR
+do something"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

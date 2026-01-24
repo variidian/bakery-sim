@@ -418,6 +418,7 @@ offset_bottom = 900.0
 rotation = 0.58262974
 mouse_filter = 1
 color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="o2" type="ColorRect" parent="bg"]
 offset_left = 704.0
@@ -427,6 +428,7 @@ offset_bottom = 1329.1604
 rotation = 0.57996225
 mouse_filter = 1
 color = Color(0.9372549, 0.7058824, 0.37254903, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="r2" type="ColorRect" parent="bg"]
 offset_left = 992.00006
@@ -436,6 +438,7 @@ offset_bottom = 1386.5718
 rotation = 0.5776673
 mouse_filter = 1
 color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="o3" type="ColorRect" parent="bg"]
 offset_left = 1223.6053
@@ -445,6 +448,7 @@ offset_bottom = 1394.1835
 rotation = 0.5577695
 mouse_filter = 1
 color = Color(0.9372549, 0.7058824, 0.37254903, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="r3" type="ColorRect" parent="bg"]
 offset_left = 1567.3901
@@ -454,6 +458,7 @@ offset_bottom = 1428.0623
 rotation = 0.56205815
 mouse_filter = 1
 color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+metadata/_edit_use_anchors_ = true
 
 [node name="o4" type="ColorRect" parent="bg"]
 offset_left = 1778.935
@@ -507,6 +512,7 @@ offset_top = -116.0
 offset_right = 382.0
 offset_bottom = 660.0
 rotation = 0.5942764
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect2" type="ColorRect" parent="bg"]
 offset_left = 600.18274
@@ -514,6 +520,7 @@ offset_top = -93.57959
 offset_right = 644.7899
 offset_bottom = 1123.2375
 rotation = 0.5942764
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect3" type="ColorRect" parent="bg"]
 offset_left = 915.00006
@@ -521,6 +528,7 @@ offset_top = -126.00003
 offset_right = 959.60724
 offset_bottom = 1455.9482
 rotation = 0.5942764
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect4" type="ColorRect" parent="bg"]
 offset_left = 1195.0
@@ -528,6 +536,7 @@ offset_top = -174.0
 offset_right = 1239.6072
 offset_bottom = 1407.9482
 rotation = 0.550409
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect5" type="ColorRect" parent="bg"]
 offset_left = 1454.0
@@ -535,6 +544,7 @@ offset_top = -147.00003
 offset_right = 1498.6072
 offset_bottom = 1434.9482
 rotation = 0.550409
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect6" type="ColorRect" parent="bg"]
 offset_left = 1748.9999
@@ -542,6 +552,7 @@ offset_top = -111.00003
 offset_right = 1793.607
 offset_bottom = 1470.9482
 rotation = 0.550409
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect7" type="ColorRect" parent="bg"]
 offset_left = 2004.0
@@ -549,6 +560,7 @@ offset_top = -72.99991
 offset_right = 2048.6072
 offset_bottom = 1508.9484
 rotation = 0.550409
+metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect8" type="ColorRect" parent="bg"]
 offset_left = 2247.0
@@ -556,6 +568,7 @@ offset_top = 43.99997
 offset_right = 2291.6072
 offset_bottom = 1625.9482
 rotation = 0.550409
+metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(958, 446)
