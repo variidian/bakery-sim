@@ -12,4 +12,7 @@ func _on_button_pressed() -> void:
 	elif a.from_kitchen2:
 		scene = "res://e/kitchen_2.tscn"
 		a.from_kitchen2 = false
+	elif a.from_kitchen3:
+		scene = "res://e/kitchen_3.tscn"
+		a.from_kitchen3 = false
 	transition.change_scene( scene, "draggables_guide")

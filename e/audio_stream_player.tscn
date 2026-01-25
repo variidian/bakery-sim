@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dinenfxguyfqa"]
+
+[ext_resource type="AudioStream" uid="uid://cv74w1bpt0glp" path="res://images/oven_beeep.wav" id="1_ahum0"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_ahum0")

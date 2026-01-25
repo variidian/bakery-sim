@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://8o6ixh71ex6e"]
+[gd_scene load_steps=9 format=3 uid="uid://8o6ixh71ex6e"]
 
 [ext_resource type="Script" uid="uid://cs65spatsmsp2" path="res://e/kitchen_2.gd" id="1_a1ff5"]
 [ext_resource type="Theme" uid="uid://b4naw2i47mcoi" path="res://e/theme.tres" id="2_laly8"]
+[ext_resource type="Texture2D" uid="uid://bq2vhir4wrrx2" path="res://images/raw_croissant.png" id="3_1xy25"]
+[ext_resource type="Script" uid="uid://cynpdpekymxlb" path="res://e/object.gd" id="4_tf2ye"]
+[ext_resource type="Texture2D" uid="uid://dx2ovy86eoypg" path="res://images/oven.png" id="4_yl3au"]
+[ext_resource type="Texture2D" uid="uid://b2lhlegen7u1a" path="res://images/baked_croissant.png" id="6_tf2ye"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yl3au"]
+size = Vector2(767.6412, 576.1725)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tf2ye"]
+size = Vector2(870.4896, 492.30524)
 
 [node name="kitchen2" type="Node2D"]
 script = ExtResource("1_a1ff5")
@@ -50,4 +60,67 @@ theme = ExtResource("2_laly8")
 text = "?"
 metadata/_edit_use_anchors_ = true
 
+[node name="oven" type="Sprite2D" parent="."]
+position = Vector2(1360, 464.00006)
+scale = Vector2(0.70736194, 0.7532467)
+texture = ExtResource("4_yl3au")
+
+[node name="Area2D" type="Area2D" parent="oven"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="oven/Area2D"]
+position = Vector2(-0.7067871, -1.3275757)
+scale = Vector2(0.99999964, 0.9999997)
+shape = SubResource("RectangleShape2D_yl3au")
+
+[node name="Button" type="Button" parent="oven"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -374.63135
+offset_top = -288.08627
+offset_right = 384.52734
+offset_bottom = 288.0861
+
+[node name="baked_croissant" type="Sprite2D" parent="."]
+position = Vector2(1366, 473.00003)
+scale = Vector2(0.5416667, 0.5277778)
+texture = ExtResource("6_tf2ye")
+script = ExtResource("4_tf2ye")
+
+[node name="Button" type="Button" parent="baked_croissant"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -420.9231
+offset_top = -255.78955
+offset_right = 420.9231
+offset_bottom = 225.47357
+
+[node name="croissant" type="Sprite2D" parent="."]
+position = Vector2(448.99997, 719.99994)
+scale = Vector2(0.446875, 0.51712954)
+texture = ExtResource("3_1xy25")
+script = ExtResource("4_tf2ye")
+
+[node name="Button" type="Button" parent="croissant"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -476.64328
+offset_top = -270.7251
+offset_right = 452.0281
+offset_bottom = 235.91785
+
+[node name="Area2D" type="Area2D" parent="croissant"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="croissant/Area2D"]
+position = Vector2(0.00018310547, -30.37378)
+scale = Vector2(1.0000005, 1.0000002)
+shape = SubResource("RectangleShape2D_tf2ye")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="area_entered" from="oven/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="pressed" from="oven/Button" to="." method="_button_oven_pressed"]
+[connection signal="button_down" from="baked_croissant/Button" to="baked_croissant" method="_on_button_button_down"]
+[connection signal="button_up" from="baked_croissant/Button" to="baked_croissant" method="_on_button_button_up"]
+[connection signal="button_down" from="croissant/Button" to="croissant" method="_on_button_button_down"]
+[connection signal="button_up" from="croissant/Button" to="croissant" method="_on_button_button_up"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

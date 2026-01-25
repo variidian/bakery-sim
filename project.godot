@@ -21,6 +21,7 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 transition="*res://transitioner.gd"
 c="*res://color_rect.tscn"
 a="*res://a.gd"
+beep="*res://e/audio_stream_player.tscn"
 
 [dialogue_manager]
 
