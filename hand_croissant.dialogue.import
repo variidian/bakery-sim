@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cumqa0xecdo5e"
+path="res://.godot/imported/hand_croissant.dialogue-230c804dd83cff7480792f2c21e54675.tres"
+
+[deps]
+
+source_file="res://hand_croissant.dialogue"
+dest_files=["res://.godot/imported/hand_croissant.dialogue-230c804dd83cff7480792f2c21e54675.tres"]
+
+[params]
+
+defaults=true

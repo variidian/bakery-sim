@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dirscmlx3ggj8"]
+
+[ext_resource type="Script" uid="uid://cirfyh27b3l0n" path="res://e/hand_croissant.gd" id="1_rjk4n"]
+[ext_resource type="Texture2D" uid="uid://b3xbco67agwv5" path="res://images/croissant w cream.png" id="2_wm83r"]
+
+[node name="hand_croissant" type="Node2D"]
+script = ExtResource("1_rjk4n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("2_wm83r")

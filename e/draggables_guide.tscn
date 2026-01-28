@@ -522,6 +522,6 @@ theme = ExtResource("1_4yyv2")
 theme_override_font_sizes/normal_font_size = 35
 text = "
 STEP FOUR
-drag the strawberry slices and cream onto your croissant, them hand it to the customer."
+drag the strawberry slices  onto your croissant, then hand it to the customer."
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

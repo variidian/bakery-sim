@@ -1,14 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://c8bnc3cyjjenl"]
+[gd_scene load_steps=8 format=3 uid="uid://c8bnc3cyjjenl"]
 
 [ext_resource type="Theme" uid="uid://b4naw2i47mcoi" path="res://e/theme.tres" id="1_b53h5"]
 [ext_resource type="Script" uid="uid://docuu4alxj0r6" path="res://e/kitchen_3.gd" id="1_wejy5"]
+[ext_resource type="Texture2D" uid="uid://b2lhlegen7u1a" path="res://images/baked_croissant.png" id="3_g7bi7"]
+[ext_resource type="Texture2D" uid="uid://biyonmps6phc2" path="res://images/strawberry.png" id="4_ffs4x"]
+[ext_resource type="Script" uid="uid://cynpdpekymxlb" path="res://e/object.gd" id="5_oshmu"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ewlwo"]
+radius = 89.57025
+height = 619.9846
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f6mo4"]
+size = Vector2(331.91742, 318.3973)
 
 [node name="kitchen_3" type="Node2D"]
 script = ExtResource("1_wejy5")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1928.0
-offset_bottom = 1101.0
+offset_left = 1.0
+offset_top = 11.0
+offset_right = 1929.0
+offset_bottom = 1112.0
 color = Color(0.54901963, 0.34117648, 0.27058825, 1)
 
 [node name="border" type="Node2D" parent="."]
@@ -50,4 +62,39 @@ theme = ExtResource("1_b53h5")
 text = "?"
 metadata/_edit_use_anchors_ = true
 
+[node name="croissant" type="Sprite2D" parent="."]
+position = Vector2(1244, 493)
+scale = Vector2(0.85774744, 0.8826389)
+texture = ExtResource("3_g7bi7")
+
+[node name="Area2D" type="Area2D" parent="croissant"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="croissant/Area2D"]
+position = Vector2(5.8292227, -39.65382)
+rotation = 1.5245264
+shape = SubResource("CapsuleShape2D_ewlwo")
+
+[node name="strawberry" type="Sprite2D" parent="."]
+position = Vector2(357, 479.99997)
+scale = Vector2(0.82283777, 0.77576053)
+texture = ExtResource("4_ffs4x")
+script = ExtResource("5_oshmu")
+
+[node name="Area2D" type="Area2D" parent="strawberry"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="strawberry/Area2D"]
+position = Vector2(-18.906647, 217.20624)
+scale = Vector2(0.9999997, 0.9999997)
+shape = SubResource("RectangleShape2D_f6mo4")
+
+[node name="Button" type="Button" parent="strawberry"]
+modulate = Color(1, 1, 1, 0)
+offset_left = -178.65002
+offset_top = 58.007626
+offset_right = 142.1908
+offset_bottom = 373.82678
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="area_entered" from="croissant/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="button_down" from="strawberry/Button" to="strawberry" method="_on_button_button_down"]
+[connection signal="button_up" from="strawberry/Button" to="strawberry" method="_on_button_button_up"]

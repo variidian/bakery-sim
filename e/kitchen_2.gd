@@ -22,6 +22,6 @@ func _on_timer_timeout() -> void:
 func _button_oven_pressed() -> void:
 	if can_open_oven:
 		baked_croissant.show()
-		await get_tree().create_timer(2.0).timeout
+		await get_tree().create_timer(1.0).timeout
 		c.anim()
 		transition.change_scene("res://e/kitchen_3.tscn", "kitchen2")

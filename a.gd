@@ -6,3 +6,6 @@ var 	from_kitchen3 := false
 func to_kitchen_from_front():
 	c.anim()
 	transition.change_scene("res://e/kitchen.tscn", "get_order")
+func to_get_order_from_croissant():
+	c.anim()
+	transition.change_scene("res://e/get_order.tscn", "hand_croissant")

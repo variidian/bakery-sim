@@ -1,0 +1,5 @@
+~ start
+You: [[Hi|Hello|Howdy]], heres your croissant.
+Customer: [[ oh,|hm?|woof,|meow,|rawr,|mhm,|er,]] [[ thanks.|nice.|yay.|thank you|i love you| you're short]]
+do a.to_get_order_from_croissant()
+=> END
