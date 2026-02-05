@@ -1,0 +1,15 @@
+~ start
+Customer: Hey! I'm [[Nate|Ren|Parker|Avery|Cameron]]. I love [[ basketball|cats|dogs|sport|people]]. that coffee you got there sure looks nice.
+Customer: ... [[ and you're looking very fine| and you look.. great|and i love you already| When can we kiss?]]
+You: What? 
+Customer: I said.. .. ... Nothing. Don't worry about it.
+Customer: Anyways, will you marry me?
+- No
+	You: uhm..
+	You: i think i'm good.
+	do a.to_get_order_from_date()
+- Yes
+Customer: That's great.
+Customer: i'll be looking forward to seeing you tomorrow!
+do a.to_marry_from_date()
+=> END

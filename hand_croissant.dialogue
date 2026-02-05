@@ -6,6 +6,8 @@ Customer: [[ are you always this cute, by the way?| Are we at a museum? Because 
 - Yes
 	You: ... yes.
 	Customer: Thanks! see you tuesday :D
+	Customer: I know this date is gonna go great.
+	do a.to_date_from_croissant()
 - No.
 	You: No.
 	do a.to_get_order_from_croissant()

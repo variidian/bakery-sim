@@ -11,4 +11,13 @@ func to_get_order_from_croissant():
 	transition.change_scene("res://e/get_order.tscn", "hand_croissant")
 func to_get_order_from_start():
 	c.anim()
-	transition.change_scene("res://e/get_order.tscn", "start") #make sure the root scene of wherever its coming from is start
+	transition.change_scene("res://e/get_order.tscn", "start")
+func to_get_order_from_date():
+	c.anim()
+	transition.change_scene("res://e/get_order.tscn", "date")
+func to_date_from_croissant():
+	c.anim()
+	transition.change_scene("res://date.tscn", "hand_croissant")
+func to_marry_from_date():
+	c.anim()
+	transition.change_scene("res://marry.tscn", "date")

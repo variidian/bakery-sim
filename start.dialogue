@@ -1,5 +1,5 @@
 ~ start
-You: It's a nice sunset, the perfect monday afternoon - and the perfect time to clock in for your first shift at the bakery.
+You: It's a nice monday, a nice cloudy night - and the perfect time to clock in for your first shift at the bakery.
 - Yes
 	You: Lets go!
 	do a.to_get_order_from_start()

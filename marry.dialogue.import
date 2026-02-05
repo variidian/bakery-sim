@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://j5iqshfl6i1n"
+path="res://.godot/imported/marry.dialogue-3e04edfcfe583e540285e88925d54a0e.tres"
+
+[deps]
+
+source_file="res://marry.dialogue"
+dest_files=["res://.godot/imported/marry.dialogue-3e04edfcfe583e540285e88925d54a0e.tres"]
+
+[params]
+
+defaults=true

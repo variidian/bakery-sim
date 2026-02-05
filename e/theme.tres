@@ -1,7 +1,8 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://b4naw2i47mcoi"]
+[gd_resource type="Theme" load_steps=9 format=3 uid="uid://b4naw2i47mcoi"]
 
 [ext_resource type="FontFile" uid="uid://dsa2nghruisiv" path="res://images/KiriFont.otf" id="1_5vnsr"]
-[ext_resource type="FontFile" uid="uid://di4boldhqsy4q" path="res://images/KiriFont.ttf" id="2_8oord"]
+[ext_resource type="FontFile" uid="uid://b7v088mq4c4cp" path="res://images/droid-sans/DroidSans-Bold.ttf" id="2_8oord"]
+[ext_resource type="FontFile" uid="uid://bjaow3cxuu7k" path="res://images/droid-sans/DroidSans.ttf" id="2_war85"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_em0ha"]
 bg_color = Color(1, 1, 1, 1)
@@ -65,7 +66,8 @@ Button/styles/hover = SubResource("StyleBoxFlat_em0ha")
 Button/styles/normal = SubResource("StyleBoxFlat_4ib3u")
 Panel/styles/panel = SubResource("StyleBoxFlat_5vnsr")
 ProgressBar/font_sizes/font_size = 50
-ProgressBar/fonts/font = ExtResource("2_8oord")
+ProgressBar/fonts/font = ExtResource("2_war85")
 ProgressBar/styles/background = SubResource("StyleBoxFlat_8oord")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_war85")
-RichTextLabel/fonts/normal_font = ExtResource("1_5vnsr")
+RichTextLabel/font_sizes/normal_font_size = 25
+RichTextLabel/fonts/normal_font = ExtResource("2_8oord")
