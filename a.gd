@@ -9,3 +9,6 @@ func to_kitchen_from_front():
 func to_get_order_from_croissant():
 	c.anim()
 	transition.change_scene("res://e/get_order.tscn", "hand_croissant")
+func to_get_order_from_start():
+	c.anim()
+	transition.change_scene("res://e/get_order.tscn", "start") #make sure the root scene of wherever its coming from is start

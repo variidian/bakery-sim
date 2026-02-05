@@ -2,4 +2,7 @@
 Customer: [[Hey!|Hello,|Hi,|Howdy,]] [[ could you get me|may i get|can you get me]] a strawberry cream croissant, [[ please?|dear?|darl.|darling?]]
 - Yeah!
 	Customer: [[Great!|Nice,nice,|Oh darling,|Thanks!]] [[ i'll just wait here, mhm?|Be quick, kay?|Rush it, would you?|I love you!]] 
+	Customer: By the way, [[ can i have your number?| are you a magnet? cuz you're atracting my heart.| are you from tenessee? cuz you're the only ten i see.| are you a parking ticket? cuz you've got written 'fine' all over you.| can i buy you a drink?| like the pickle in my cheeseburger, i want to take you out.]]
+	- No
+		You: [[ Wha?| What the helly 💔|gang, you were born like yesterday.| ....| No.| Whar?| What??| gang, no.| never in my 67 years of life have i wanted to date you.| 67676767]]
 do a.to_kitchen_from_front()

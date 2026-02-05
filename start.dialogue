@@ -1,0 +1,12 @@
+~ start
+You: It's a nice sunset, the perfect monday afternoon - and the perfect time to clock in for your first shift at the bakery.
+- Yes
+	You: Lets go!
+	do a.to_get_order_from_start()
+- No
+	You: okay, let me rephrase
+	You: ....
+	You: We HAVE to go to our shift, or we go broke broke.
+	- Yes
+		You: Yeah.
+		do a.to_get_order_from_start()

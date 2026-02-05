@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://c2m5omaymvbbm"]
 
 [ext_resource type="Script" uid="uid://cqu1f0j8xti44" path="res://e/startmenu.gd" id="1_6ymmn"]
-[ext_resource type="Texture2D" uid="uid://dieploo7mk1im" path="res://images/bake.png" id="2_qb5x8"]
+[ext_resource type="Texture2D" uid="uid://xl4ytehv41oe" path="res://images/0000.png" id="2_cbmov"]
 [ext_resource type="FontFile" uid="uid://dsa2nghruisiv" path="res://images/KiriFont.otf" id="4_cbmov"]
 [ext_resource type="PackedScene" uid="uid://b4wpbrf0cwbnr" path="res://color_rect.tscn" id="4_em0ha"]
 
@@ -571,8 +571,8 @@ rotation = 0.550409
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(958, 446)
-texture = ExtResource("2_qb5x8")
+position = Vector2(958, 437.5)
+texture = ExtResource("2_cbmov")
 
 [node name="Area2D" type="Area2D" parent="Sprite2D"]
 

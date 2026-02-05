@@ -12,4 +12,4 @@ func _on_area_2d__mouse_exited() -> void:
 
 func _on_button_pressed() -> void:
 	c.anim() #start button to trigger animation + next scene
-	transition.change_scene("res://e/get_order.tscn", "startmenu")
+	transition.change_scene("res://e/start.tscn", "startmenu")
