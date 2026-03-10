@@ -159,7 +159,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [node name="ExampleBalloon" type="CanvasLayer"]
-layer = 100
+layer = 99
 script = ExtResource("1_jj3vs")
 
 [node name="Balloon" type="Control" parent="."]
@@ -172,6 +172,7 @@ offset_left = 40.0
 offset_bottom = -67.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
 theme = SubResource("Theme_qq3yp")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon"]
