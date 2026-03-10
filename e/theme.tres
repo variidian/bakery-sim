@@ -1,28 +1,28 @@
-[gd_resource type="Theme" load_steps=9 format=3 uid="uid://b4naw2i47mcoi"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://b4naw2i47mcoi"]
 
-[ext_resource type="FontFile" uid="uid://dsa2nghruisiv" path="res://images/KiriFont.otf" id="1_5vnsr"]
-[ext_resource type="FontFile" uid="uid://b7v088mq4c4cp" path="res://images/droid-sans/DroidSans-Bold.ttf" id="2_8oord"]
-[ext_resource type="FontFile" uid="uid://bjaow3cxuu7k" path="res://images/droid-sans/DroidSans.ttf" id="2_war85"]
+[ext_resource type="FontFile" uid="uid://of8jhua2btwj" path="res://VT323-Regular.ttf" id="1_war85"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_em0ha"]
-bg_color = Color(1, 1, 1, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5a4qu"]
+bg_color = Color(0.9131244, 0.5976673, 0.59948415, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
-border_color = Color(0.7490196, 0.34117648, 0.36078432, 1)
+border_color = Color(0, 0.2627451, 0.24705882, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+expand_margin_top = 15.0
+expand_margin_bottom = 15.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ib3u"]
-bg_color = Color(0.7490196, 0.34117648, 0.36078432, 1)
+bg_color = Color(0.9131244, 0.5976673, 0.59948415, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
-border_color = Color(0.99116415, 0.99116427, 0.99116415, 1)
+border_color = Color(0, 0.2627451, 0.24705882, 1)
 corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
@@ -31,43 +31,47 @@ expand_margin_top = 15.0
 expand_margin_bottom = 15.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5vnsr"]
-bg_color = Color(0.22745098, 0.019607844, 0.019607844, 1)
+bg_color = Color(0.9424336, 0.6738157, 0.6637372, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
-border_color = Color(0.9424336, 0.6738157, 0.6637372, 1)
+border_color = Color(0, 0.2627451, 0.24705882, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
 corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8oord"]
-bg_color = Color(0.7490196, 0.34117648, 0.36078432, 1)
+bg_color = Color(0.9131244, 0.5976673, 0.59948415, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
-border_color = Color(0.9424336, 0.6738157, 0.6637372, 1)
+border_color = Color(0, 0.2627451, 0.24705882, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_war85"]
-bg_color = Color(0.54901963, 0.21568628, 0.21960784, 1)
+bg_color = Color(0.8787293, 0.5046109, 0.51223963, 1)
 border_width_left = 10
 border_width_top = 10
 border_width_right = 10
 border_width_bottom = 10
-border_color = Color(0.9424336, 0.6738157, 0.6637372, 1)
+border_color = Color(0, 0.2627451, 0.24705882, 1)
 
 [resource]
+Button/colors/font_color = Color(0, 0.2627451, 0.24705882, 1)
 Button/colors/font_hover_color = Color(0.7490196, 0.34117648, 0.36078432, 1)
 Button/font_sizes/font_size = 40
-Button/fonts/font = ExtResource("1_5vnsr")
-Button/styles/hover = SubResource("StyleBoxFlat_em0ha")
+Button/fonts/font = ExtResource("1_war85")
+Button/styles/focus = SubResource("StyleBoxFlat_5a4qu")
+Button/styles/hover = SubResource("StyleBoxFlat_5a4qu")
 Button/styles/normal = SubResource("StyleBoxFlat_4ib3u")
+Button/styles/pressed = SubResource("StyleBoxFlat_5a4qu")
 Panel/styles/panel = SubResource("StyleBoxFlat_5vnsr")
-ProgressBar/font_sizes/font_size = 50
-ProgressBar/fonts/font = ExtResource("2_war85")
+ProgressBar/font_sizes/font_size = 75
+ProgressBar/fonts/font = ExtResource("1_war85")
 ProgressBar/styles/background = SubResource("StyleBoxFlat_8oord")
 ProgressBar/styles/fill = SubResource("StyleBoxFlat_war85")
-RichTextLabel/font_sizes/normal_font_size = 25
-RichTextLabel/fonts/normal_font = ExtResource("2_8oord")
+RichTextLabel/colors/default_color = Color(0, 0.2627451, 0.24705882, 1)
+RichTextLabel/font_sizes/normal_font_size = 20
+RichTextLabel/fonts/normal_font = ExtResource("1_war85")

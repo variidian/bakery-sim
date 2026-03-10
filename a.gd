@@ -1,4 +1,5 @@
 extends Node
+@onready var diallogue = preload("res://balloon.tscn")
 var from_kitchen := false
 var from_kitchen1 := false
 var from_kitchen2 := false

@@ -39,4 +39,11 @@ enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg", "res://add
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://purchase_croissant.dialogue", "res://hand_croissant.dialogue", "res://start.dialogue", "res://date.dialogue", "res://marry.dialogue")
+locale/translations_pot_files=PackedStringArray("res://purchase_croissant.dialogue", "res://hand_croissant.dialogue", "res://start.dialogue", "res://date.dialogue", "res://marry.dialogue", "res://untitled.dialogue")
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_s3tc_bptc=true
+textures/vram_compression/import_etc2_astc=true
