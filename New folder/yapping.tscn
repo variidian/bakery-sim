@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgoaj8maavkbb"]
+
+[ext_resource type="AudioStream" uid="uid://d4ffq71tohxqt" path="res://artificiallyinspired-alien-high-pitch-312010.mp3" id="1_rhfu3"]
+[ext_resource type="Script" uid="uid://c0v0qqmrvb7dm" path="res://New folder/yapping.gd" id="2_7us62"]
+
+[node name="yapping" type="AudioStreamPlayer"]
+stream = ExtResource("1_rhfu3")
+autoplay = true
+parameters/looping = true
+script = ExtResource("2_7us62")

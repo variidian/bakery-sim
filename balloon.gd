@@ -88,6 +88,12 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if is_instance_valid(dialogue_line):
 		progress.visible = not dialogue_label.is_typing and dialogue_line.responses.size() == 0 and not dialogue_line.has_tag("voice")
+	if dialogue_label.is_typing and Yapping.stream_paused == true:
+		Yapping.stream_paused = false
+		print("p")
+	if not dialogue_label.is_typing and Yapping.stream_paused == false:
+		Yapping.stream_paused = true
+		print("o")
 
 
 func _unhandled_input(_event: InputEvent) -> void:
@@ -208,6 +214,7 @@ func _on_balloon_gui_input(event: InputEvent) -> void:
 
 func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 	next(response.next_id)
+	Click.play()
 
 
 #endregion

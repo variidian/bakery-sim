@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://uwva2j38wvw"]
+
+[ext_resource type="AudioStream" uid="uid://dev1kk2sitbaa" path="res://denis-pavlov-music-podcast-soothing-serene-smooth-jazz-romantic-cafe-vibes-213058.mp3" id="1_dn0if"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_dn0if")
+autoplay = true

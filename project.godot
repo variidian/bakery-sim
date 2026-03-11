@@ -22,6 +22,9 @@ transition="*res://transitioner.gd"
 c="*res://color_rect.tscn"
 a="*res://a.gd"
 beep="*res://e/audio_stream_player.tscn"
+GlobalAudioStreamPlayer="*res://New folder/audio_stream_player.tscn"
+Click="*res://New folder/click.tscn"
+Yapping="*res://New folder/yapping.tscn"
 
 [dialogue_manager]
 
