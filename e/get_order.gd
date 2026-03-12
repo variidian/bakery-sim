@@ -1,8 +1,8 @@
 extends Node2D
 @onready var customer = $customer
-const customer_sprite1 = preload("res://images/person3-removebg-preview.png") #PLACEHOLDER SPRITE | CHANGE LATER
-const customer_sprite2 = preload("res://images/person2-removebg-preview.png") #PLACEHOLDER SPRITE | CHANGE LATER
-const customer_sprite3 =  preload("res://images/person1-removebg-preview.png") #PLACEHOLDER SPRITE | CHANGE LATER
+const customer_sprite1 = preload("res://images/girl.png")
+const customer_sprite2 = preload("res://images/IMG_2726.png") 
+const customer_sprite3 =  preload("res://images/IMG_2727.png") 
 const croissant_dialogue = preload("res://purchase_croissant.dialogue")
 func _ready() -> void:
 	var randf = randf()
